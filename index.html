@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahmoud & Nesma — December 4, 2026</title>
+
+<!-- Open Graph / link preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mahmoud & Nesma — December 4, 2026">
+<meta property="og:description" content="Join us as we celebrate our wedding at Khatatba, Sadat City.">
+<meta property="og:image" content="https://mohamedibrahimp.github.io/Mahmoud-Nesma/og-image.png">
+<meta property="og:url" content="https://mohamedibrahimp.github.io/Mahmoud-Nesma/">
+<meta property="og:site_name" content="Mahmoud & Nesma">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="./src/ico.png">
+</head>
+<body class="loading">
+  <canvas id="fireworks-canvas"></canvas>
+  <audio id="bg-music" loop>
+    <source src="./src/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="music-toggle" class="music-toggle" aria-label="Toggle music">🔇</button>
+
+  <!-- Preloader -->
+  <div class="loader" id="loader">
+    <div class="loader-frame">
+      <div class="loader-mark">M&nbsp;&amp;&nbsp;N</div>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <header class="site-nav" id="siteNav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-mark">M <span>&amp;</span> N</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#story" class="nav-link">Our Story</a>
+        <a href="#party" class="nav-link">Party</a>
+        <a href="#location" class="nav-link">Location</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-scrim" id="navScrim"></div>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero-domes" aria-hidden="true">
+      <svg viewBox="0 0 1440 200" preserveAspectRatio="none"><path d="M0,200 L0,120 Q60,60 120,120 Q150,40 190,110 Q230,50 270,120 Q330,60 390,120 L390,200 Z M400,200 L400,100 Q460,30 520,100 Q560,20 610,95 Q660,25 710,100 Q760,40 820,110 L820,200 Z M830,200 L830,130 Q890,70 950,130 Q1000,60 1050,125 Q1110,65 1170,130 L1170,200 Z M1180,200 L1180,110 Q1240,50 1300,110 Q1340,40 1380,105 Q1410,60 1440,100 L1440,200 Z" fill="var(--cream)"/></svg>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-frame">
+        <p class="eyebrow" data-reveal>Together with their families</p>
+        <div class="ornament" data-reveal><span></span><i>◆</i><span></span></div>
+        <h1 class="hero-names" data-reveal>Mahmoud <span class="amp">&amp;</span> Nesma</h1>
+        <p class="hero-invite" data-reveal>request the pleasure of your company at their wedding</p>
+        <p class="hero-date" data-reveal>4 · 12 · 2026 — ElKhatatba</p>
+
+        <div class="countdown" data-reveal>
+          <div class="cd-block"><span class="cd-num" id="cd-days">00</span><span class="cd-label">Days</span></div>
+          <div class="cd-block"><span class="cd-num" id="cd-hours">00</span><span class="cd-label">Hours</span></div>
+          <div class="cd-block"><span class="cd-num" id="cd-mins">00</span><span class="cd-label">Minutes</span></div>
+          <div class="cd-block"><span class="cd-num" id="cd-secs">00</span><span class="cd-label">Seconds</span></div>
+        </div>
+
+        <div class="hero-actions" data-reveal>
+          <a href="#location" class="btn btn-line">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section class="story" id="story">
+    <div class="wrap">
+      <p class="eyebrow center" data-reveal>How it began</p>
+      <h2 class="section-title center" data-reveal>Our Story</h2>
+
+      <div class="chapters">
+                <article class="chapter chapter-reverse" data-reveal>
+          <div class="chapter-photo">
+            <img src="./src/imgs/first.jpeg" alt="The Ceremony">
+          </div>
+          <div class="chapter-copy">
+            <span class="chapter-num">II</span>
+            <h3>I'm the story</h3>
+            <p></p>
+          </div>
+        </article>
+
+        <article class="chapter" data-reveal>
+          <div class="chapter-photo">
+            <img src="./src/imgs/Engagment.jpeg" alt="Our Engagement">
+          </div>
+          <div class="chapter-copy">
+            <span class="chapter-num">I</span>
+            <h3>Our Engagement</h3>
+            <p>The day we promised forever. Surrounded by the people we love, we exchanged rings, shared unforgettable smiles, and began the most beautiful chapter of our story.</p>
+          </div>
+        </article>
+
+        <article class="chapter chapter-reverse" data-reveal>
+          <div class="chapter-photo">
+            <img src="./src/imgs/Cermony.jpeg" alt="The Ceremony">
+          </div>
+          <div class="chapter-copy">
+            <span class="chapter-num">II</span>
+            <h3>Our Marriage Ceremony</h3>
+            <p>The moment our hearts became one in the eyes of God. With our families by our side, we began a new chapter built on love, faith, and commitment.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wedding Party -->
+  <section class="party" id="party">
+    <div class="wrap">
+      <p class="eyebrow center" data-reveal>Our nearest and dearest</p>
+      <h2 class="section-title center" data-reveal>Wedding Party</h2>
+    </div>
+
+    <div class="party-scroller-wrap" data-reveal>
+      <button class="party-arrow party-prev" id="partyPrev" aria-label="Previous">&#8249;</button>
+      <div class="party-scroller" id="partyScroller">
+        <div class="party-card">
+          <div class="party-photo P1"></div>
+          <h4><a href="tel:01282570473" style="font-style: normal;">📞</a>Awad Saber</h4>
+        </div>
+        <div class="party-card">
+          <div class="party-photo P2"></div>
+          <h4><a href="tel:+201205538474" style="font-style: normal;">📞</a>George Malak</h4>
+        </div>
+        <div class="party-card">
+          <div class="party-photo P3"></div>
+          <h4><a href="tel:01221824183" style="font-style: normal;">📞</a>Mohamed Ehab</h4>
+        </div>
+        <div class="party-card">
+          <div class="party-photo P4"></div>
+          <h4><a href="tel:+201145357184" style="font-style: normal;">📞</a>Hamedo</h4>
+        </div>
+        <div class="party-card">
+          <div class="party-photo P5"></div>
+          <h4><a href="tel:01208860962" style="font-style: normal;">📞</a>Mohamed Ibrahim</h4>
+        </div>
+        <div class="party-card">
+          <div class="party-photo P6"></div>
+          <h4><a href="tel:01272160071" style="font-style: normal;">📞</a>Assar</h4>
+        </div>
+        <div class="party-card">
+          <div class="party-photo P7"></div>
+          <h4>Barakat</h4>
+        </div>
+                <div class="party-card">
+          <div class="party-photo P8"></div>
+          <h4>Tarek Yehya</h4>
+        </div>
+                <div class="party-card">
+          <div class="party-photo P9"></div>
+          <h4>Ahmed Magdy</h4>
+        </div>
+                <div class="party-card">
+          <div class="party-photo P10"></div>
+          <h4>Yousef Reda</h4>
+        </div>
+                <div class="party-card">
+          <div class="party-photo P11"></div>
+          <h4>Yousef Nasser</h4>
+        </div>
+      </div>
+      <button class="party-arrow party-next" id="partyNext" aria-label="Next">&#8250;</button>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section class="location" id="location">
+    <div class="wrap">
+      <p class="eyebrow center" data-reveal>Find us</p>
+      <h2 class="section-title center" data-reveal>Location</h2>
+      <p class="location-copy center" data-reveal>Elkhatatba — see you there.</p>
+    </div>
+    <div class="map-frame" data-reveal>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3442.574372423382!2d30.817959680391322!3d30.363044066045408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDIxJzQ4LjciTiAzMMKwNDknMDQuMSJF!5e0!3m2!1sen!2seg!4v1795739271532!5m2!1sen!2seg"
+        loading="lazy"
+        title="Venue location map"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <div class="wrap">
+      <div class="location-actions" data-reveal>
+        <a href="https://maps.app.goo.gl/Rx1x6guFGVudXKUY8" target="_blank" rel="noopener" class="btn btn-line">Get Directions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <div class="wrap">
+      <p class="eyebrow center" data-reveal>Moments we cherish</p>
+      <h2 class="section-title center" data-reveal>Gallery</h2>
+      <div class="gallery-grid">
+        <div class="g-item g-tall g-1" data-reveal></div>
+        <div class="g-item g-2" data-reveal></div>
+        <div class="g-item g-3" data-reveal></div>
+        <div class="g-item g-4" data-reveal></div>
+        <div class="g-item g-tall g-5" data-reveal></div>
+        <div class="g-item g-6" data-reveal></div>
+        <div class="g-item g-7" data-reveal></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP / closing -->
+  <section class="rsvp" id="rsvp">
+    <div class="wrap rsvp-inner">
+      <p class="eyebrow center" data-reveal>Please respond by December 4, 2026</p>
+      <h2 class="section-title center" data-reveal>Will You Join Us?</h2>
+      <p class="rsvp-copy center" data-reveal>We can't wait to celebrate with you. Let us know if you'll be there.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="ornament"><span></span><i>◆</i><span></span></div>
+    <p class="footer-mark">Mahmoud <span class="amp">&amp;</span> Nesma</p>
+    <p class="footer-sub">4 · 12 · 2026 &middot; Elkhatatba</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
