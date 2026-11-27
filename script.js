@@ -217,5 +217,5 @@ window.addEventListener('load', function () {
   setTimeout(function () {
     loader.classList.add('loader-hidden');
     body.classList.remove('loading');
-  }, 1500);
+  }, 1000);
 });
